@@ -1,0 +1,8 @@
+.displayname {
+    float: right;
+    color: rgb(253, 29, 178);
+}
+
+.displayname p {
+    font-size: large;
+}

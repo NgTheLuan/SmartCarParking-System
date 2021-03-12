@@ -1,0 +1,64 @@
+<div id="container">
+    <app-header></app-header>
+    <div class="border"></div><br/>
+
+    <h5>--- Add a new parking car ---</h5>
+    <div class="submit-form">
+        <div *ngIf="!submitted">
+            <div class="form-group">
+                <label for="Area">Area</label> &nbsp;
+                <!-- <input type="text" class="form-control" id="area" required [(ngModel)]="carparking.area" name="area" /> -->
+                <select name="area" id="area" class="form-control" required [(ngModel)]="carparking.area">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select> <br/><br/>
+            </div>
+            <div class="form-group">
+                <label for="NumberPlate">Number Plate</label> &nbsp;
+                <input type="text" class="form-control" id="numberplate" required [(ngModel)]="carparking.numberplate" name="numberplate" /><br/><br/>
+            </div>
+            <div class="form-group">
+                <label for="Status">Status</label> &nbsp;
+                <select name="status" id="status" class="form-control" required [(ngModel)]="carparking.status">
+                    <option value="true">True</option>
+                    <option value="false">Flase</option>
+                </select> <br/><br/>
+            </div>
+            <div class="form-group">
+                <label for="TimeIn">Time In</label> &nbsp;
+                <input type="datetime-local" class="form-control" id="timein" required [(ngModel)]="carparking.timein" name="timein" /><br/><br/>
+            </div>
+            <div class="form-group">
+                <label for="TimeOut">Time Out</label> &nbsp;
+                <input type="datetime-local" class="form-control" id="timeout" required [(ngModel)]="carparking.timeout" name="timeout" /><br/><br/>
+            </div>
+        </div>
+
+        <div *ngIf="submitted">
+            <h4>You submitted successfully!</h4>
+            <button class="btn btn-success" (click)="newCarParking()">Add</button>
+        </div>
+        <button (click)="saveCarParking()" class="btn btn-success">Submit</button>
+    </div><br/><br/>
+
+
+
+    <h5>--- Select a file for upload: ---</h5>
+    <input type="file" (change)="upload($event)" accept=".png,.jpg" />
+    <br><br>
+    <div *ngIf="downloadURL | async; let downloadSrc" class="alert alert-info" role="alert">
+        File uploaded: <a [href]="downloadSrc">{{downloadSrc}}</a>
+    </div>
+    <!-- <div class="container" *ngIf="downloadURL | async; let url">
+        <img [src]="url" alt="Image from AngularFireStorage">
+    </div> -->
+
+
+
+
+    <br /> <br /> <br />
+    <div class="border2"></div>
+    <br />
+    <app-footer></app-footer>
+</div>

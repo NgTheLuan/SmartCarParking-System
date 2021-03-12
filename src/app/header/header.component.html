@@ -1,0 +1,17 @@
+<header>
+    <nav>
+        <ul id="nav">
+            <li><a routerLink="/home" class="current">Home</a></li>
+            <li><a routerLink="/about">About</a></li>
+            <li><a routerLink="/manage">Manage</a></li>
+            <li> <a routerLink="/check">Check</a> </li>
+            <li><a routerLink="/history">History</a></li>
+            <li><a routerLink="#" (click)="Logout()">Logout</a></li>
+        </ul>
+        <div *ngIf="displayName" class="displayname">
+            <p>Hello - {{displayName}} -</p>
+        </div>
+        <div *ngIf="!displayName"></div>
+    </nav>
+</header>
+<br/><br/>

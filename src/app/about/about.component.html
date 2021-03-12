@@ -1,0 +1,50 @@
+<div id="container">
+  <app-header></app-header>
+  <div class="border"></div>
+  <h3>Introduce</h3>
+  <div class="date">
+    <span class="day">14</span> <span class="month">Jan</span>
+    <span class="year">2021</span>
+  </div>
+  <p>
+    Currently, the parking lot is increasingly crowded, leading to difficulties
+    in choosing quality parking, or when the parking space is out of space, the
+    car is stolen,…. This is the milestone SCPS website was born. SCPS means:
+    "Smart Car Parking System".
+  </p>
+  <br /><br />
+  <h3>Technology</h3>
+  <br />
+  <p>
+    * IOT : ESP8266 NodeMCU, Ultrasonic Sensor, DC Servo Motor, IR Sensors, 16x2
+    i2c LCD Display, Jumpers
+  </p>
+  <p>* Database : Firebase</p>
+  <p>* Web Host: GitHub</p>
+  <p>* Framework: Angular</p>
+  <br /><br />
+  <h3>Detail</h3>
+  <p>
+    Step1: When the vehicle enters the parking lot, the sensor will detect it
+    and check the sensor will scan it to detect the vehicle and enable Servo for
+    the vehicle to enter.
+  </p>
+  <p>
+    Step 2: Next, the car will park in the area of the parking lot. There will
+    be 1-2 parking spaces corresponding to area numbers A, B, C
+  </p>
+  <p>
+    Step 3: When the vehicle is parked in the above area, the IR Sensor will
+    scan the vehicle and upload the information to Firebase and display it on
+    the Website.
+  </p>
+  <p>
+    Step 4: When the car leaves the parking lot, the time is saved and the
+    parking data will return to null.
+  </p>
+
+  <img src="../../assets/images/gallery/MyProject.jpg" alt="" class="imgpro" />
+  <div class="border2"></div>
+  <br />
+  <app-footer></app-footer>
+</div>

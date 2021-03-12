@@ -1,0 +1,52 @@
+<!-- <div class="login">
+    <h3>You don't have a account 🙂</h3>
+    <p>Click here <a href="#">Register</a></p><br/>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <label class="bmd-label-floating">EMAIL</label> &nbsp;
+        <input type="email" class="form-control" formControlName="email">
+        <br/><br/>
+        <label class="bmd-label-floating">PASSWORD</label> &nbsp;
+        <input type="password" class="form-control " formControlName="password">
+        <br/><br/>
+        <div class="btn-firebase">
+            <button type="button" class="btn btn-warning btn-block" (click)="loginWithFirebase()" [disabled]="loginForm.invalid"> Login with FireBase</button>
+        </div>
+    </form>
+</div> -->
+
+<div class="limiter">
+  <div class="container-login100">
+    <div class="wrap-login100">
+      <div class="login100-pic js-tilt" data-tilt>
+        <img src="../../assets/login/images/img-01.png" alt="IMG" />
+      </div>
+
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <span class="login100-form-title"> Login </span>
+
+        <div class="wrap-input100 validate-input">
+          <input class="input100" type="email" placeholder="Email" formControlName="email" />
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </span>
+        </div>
+
+        <div class="wrap-input100 validate-input">
+          <input class="input100" type="password" placeholder="Password" formControlName="password" />
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+          </span>
+        </div>
+
+        <div class="container-login100-form-btn">
+          <button type="button" class="login100-form-btn" (click)="loginWithFirebase()" [disabled]="loginForm.invalid">
+            Login with FireBase
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

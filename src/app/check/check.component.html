@@ -1,0 +1,56 @@
+<div id="container">
+  <app-header></app-header>
+  <div class="clear"></div>
+  <div class="border"></div>
+
+  <table style="width: 100%">
+    <tr>
+      <th>
+        <label>Area</label>
+      </th>
+      <th>
+        <label>NumberPlate</label>
+      </th>
+      <th>
+        <label>Status</label>
+      </th>
+      <!-- <th>
+                <label>TimeIn</label>
+            </th> -->
+      <!-- <th>
+                <label>TimeOut</label>
+            </th> -->
+    </tr>
+
+    <tr
+      *ngFor="let carparking of carparkings; let i = index"
+      [class.active]="i == currentIndex"
+      (click)="setActiveCarParking(carparking, i)"
+    >
+      <td>{{ carparking.area }}</td>
+      <td>{{ carparking.numberplate }}</td>
+      <td
+        [ngStyle]="{ 'background-color': getColor(carparking.status) }"
+        class="dot"
+      ></td>
+      <!-- <td>{{carparking.timein}}</td> -->
+      <!-- <td>{{carparking.timeout}}</td> -->
+    </tr>
+  </table>
+
+  <!-- <div class="home-widget">
+        <h3>Zone B</h3>
+        <img src="./../../assets/images/zone/b.jpg" width="300" alt="" />
+        <p>Status: Full</p>
+    </div>
+
+    <div class="home-widget">
+        <h3>Zone C</h3>
+        <img src="./../../assets/images/zone/c.jpg" width="300" alt="" />
+        <p>Status: Enough</p>
+    </div> -->
+
+  <div class="border2"></div>
+  <br />
+  <app-footer></app-footer>
+</div>
