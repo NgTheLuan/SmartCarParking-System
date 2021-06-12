@@ -48,3 +48,10 @@ Thumbs.db
 /.firebase
 firebase.json
 .firebaserc
+database.rules.json
+
+tsconfig.app.json
+tsconfig.json
+tsconfig.spec.json
+tslint.json
+.editorconfig
