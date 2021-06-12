@@ -6,7 +6,7 @@
 /out-tsc
 # Only exists if Bazel was run
 /bazel-out
-/e2e
+
 
 # dependencies
 /node_modules
@@ -56,3 +56,4 @@ tsconfig.json
 tsconfig.spec.json
 tslint.json
 .editorconfig
+e2e
