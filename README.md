@@ -5,8 +5,5 @@
 
 <h2>Demo: https://test-bdf44.web.app/</h2>
 
-<h2>Home Page</h2>
-<img src="https://github.com/NgTheLuan/SmartCarParking-System/raw/main/src/assets/images/home/Home.png"/>
-
 <h2>IOT</h2>
 <img src="https://github.com/NgTheLuan/SmartCarParking-System/raw/main/src/assets/images/gallery/MyProject.jpg"/>
